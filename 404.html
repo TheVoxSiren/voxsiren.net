@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <base href="https://voxsiren.net/assets/images/" target="_blank">
+  <link rel="icon" type="image/avif" href="logo.avif"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get your own Vroid avatar from VoxSiren!">
+  <meta name="author" content="">
+  <title>❤</title>
+  <style>
+    @keyframes glitch {
+    	0% {transform: skew(-50deg);}
+    	5% {transform: skew(34deg);}
+    	10% {transform: skew(2deg);}
+    	15% {transform: skew(-41deg);}
+    	20% {transform: skew(24deg);}
+    	25% {transform: skew(-78deg);}
+    	30% {transform: skew(-35deg);}
+    	35% {transform: skew(45deg);}
+    	40% {transform: skew(-19deg);}
+    	45% {transform: skew(-43deg);}
+    	50% {transform: skew(-39deg);}
+    	55% {transform: skew(-10deg);}
+    	60% {transform: skew(-50deg);}
+    	65% {transform: skew(12deg);}
+    	70% {transform: skew(-46deg);}
+    	75% {transform: skew(75deg);}
+    	80% {transform: skew(85deg);}
+    	85% {transform: skew(9deg);}
+    	90% {transform: skew(-61deg);}
+    	95% {transform: skew(78deg);}
+    }
+    @keyframes noise {
+    	0% {background-position: -24px -56px;}
+    	10% {background-position: 10px 16px;}
+    	20% {background-position: -43px 44px;}
+    	30% {background-position: 55px -97px;}
+    	40% {background-position: -13px -14px;}
+    	50% {background-position: 86px 18px;}
+    	60% {background-position: 27px -12px;}
+    	70% {background-position: -25px 59px;}
+    	80% {background-position: -28px 92px;}
+    	90% {background-position: 23px 99px;}
+    }
+    @keyframes bar {
+    	0% {
+    		height: 288px;
+    		top: 98%;
+    		opacity: 0.34;
+    	}
+    	10% {
+    		height: 152px;
+    		top: 63%;
+    		opacity: 0.46;
+    	}
+    	20% {
+    		height: 219px;
+    		top: 68%;
+    		opacity: 0.13;
+    	}
+    	30% {
+    		height: 353px;
+    		top: 7%;
+    		opacity: 0.72;
+    	}
+    	40% {
+    		height: 183px;
+    		top: 86%;
+    		opacity: 0.13;
+    	}
+    	50% {
+    		height: 559px;
+    		top: 35%;
+    		opacity: 0.19;
+    	}
+    	60% {
+    		height: 50px;
+    		top: 8%;
+    		opacity: 0.69;
+    	}
+    	70% {
+    		height: 366px;
+    		top: 66%;
+    		opacity: 0.55;
+    	}
+    	80% {
+    		height: 507px;
+    		top: 3%;
+    		opacity: 0.02;
+    	}
+    	90% {
+    		height: 442px;
+    		top: 54%;
+    		opacity: 0.59;
+    	}
+    }
+    .glitch {
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	right: 0;
+    	bottom: 0;
+    	color: #fff;
+    	text-align: center;
+    	text-transform: uppercase;
+    	font: 30px "Michroma", helvetica, sans-serif;
+    	letter-spacing: 0.6em;
+    	background-image: url(glitch.avif);
+    	text-shadow: 2px 0 1px #f6050a, -2px 0 1px #1cf2f2;
+    	animation: noise 0.3s infinite;
+    }
+    .glitch:before {
+    	content: "";
+    	display: inline-block;
+    	vertical-align: middle;
+    	height: 100%;
+    }
+    .glitch:after {
+    	content: "";
+    	position: absolute;
+    	left: 0;
+    	right: 0;
+    	background: url(glitchafter.avif);
+    	animation: bar 0.5s infinite;
+    }
+    .glitch span {
+    	display: inline-block;
+    	vertical-align: middle;
+    	position: relative;
+    	z-index: 1;
+    	animation: glitch 3s infinite alternate;
+    }
+  </style>
+</head>
+<body>
+    <div class="glitch">
+        <span>Lost signal...</span>
+    </div>
+</body>
+</html>

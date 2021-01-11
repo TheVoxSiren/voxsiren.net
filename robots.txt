@@ -1,0 +1,3 @@
+User-agent:*
+Allow: *.css
+Disallow: /404.html

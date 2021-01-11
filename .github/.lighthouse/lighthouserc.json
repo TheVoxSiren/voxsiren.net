@@ -1,0 +1,14 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./",
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "preset": "lighthouse:all",
+      "assertions": {
+        "uses-http2": "off"
+      }
+    }
+  }
+}

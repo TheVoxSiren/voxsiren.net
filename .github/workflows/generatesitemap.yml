@@ -1,0 +1,41 @@
+name: Generate xml sitemap
+
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "0 0 * * *" # Every day at 00:00 UTC
+  #push:
+  #  branches:
+  #    - main
+  workflow_dispatch:
+
+jobs:
+  sitemap_job:
+    runs-on: ubuntu-latest
+    name: Generate a sitemap
+    steps:
+    - name: Checkout the repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - name: Generate the sitemap
+      id: sitemap
+      uses: cicirello/generate-sitemap@v1.6.1
+      with:
+        base-url-path: https://voxsiren.net/
+    - name: Output stats
+      run: |
+        echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
+        echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
+        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
+    - name: Commit files
+      run: |
+        git add .
+        git config --local user.email "actions@github.com"
+        git config --local user.name "github-actions[bot]"
+        git diff --quiet && git diff --staged --quiet || git commit -am "updated sitemap"
+    - name: Push changes
+      uses: ad-m/github-push-action@master # This is a premade github action
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
