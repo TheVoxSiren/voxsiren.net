@@ -8,7 +8,7 @@ on:
 
 jobs:
   getpsresults:
-    env: 
+    env:
       WEBSITE: https://voxsiren.net
       PSRDESKTOP: pagespeedresultdesktop
       PSRMOBILE: pagespeedresultmobile
@@ -24,7 +24,7 @@ jobs:
           mkdir -p $RESULTSFOLDER
           curl "https://pagespeed-insights.herokuapp.com/?url=$WEBSITE" > ./$RESULTSFOLDER/$PSRDESKTOP.svg
           curl "https://pagespeed-insights.herokuapp.com/?url=$WEBSITE&strategy=mobile" > ./$RESULTSFOLDER/$PSRMOBILE.svg
-    - name: Commit files 
+    - name: Commit files
       run: |
         git add .
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
