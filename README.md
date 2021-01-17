@@ -1,7 +1,7 @@
 # VoxSiren.github.io
+<img align="left" height="50" src="https://cdn.worldvectorlogo.com/logos/google-lighthouse.svg" alt="Resume application project app icon">
 
-## Pagespeed score
-### Desktop score
-![Desktop pagespeed score](/reports/pagespeedresultdesktop.svg "Desktop pagespeed score")
-## Mobile, made 4 hours ago of commit
+# Pagespeed score
+
+### Mobile, made 4 hours ago of commit
 ![Mobile pagespeed score](/reports/pagespeedresultmobile.svg "Mobile pagespeed score")
