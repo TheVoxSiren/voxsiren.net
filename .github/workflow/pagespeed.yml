@@ -23,7 +23,6 @@ jobs:
     - name: Create local changes
       run: | # Have to be sure a folder is present if not, make it
           mkdir -p ${RESULTSFOLDER}
-#          curl "${PSURL}/?url=${WEBSITE}" > ./${HOST}/${PSRDESKTOP}.svg
           curl "${PSURL}/?url=${WEBSITE}&strategy=mobile" > ./${HOST}/${PSRMOBILE}.svg
     - name: Commit files
       run: |
