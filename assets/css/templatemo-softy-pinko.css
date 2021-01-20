@@ -374,7 +374,7 @@ header
 --------------------------------------------- 
 */
 .header-area {
-/*  position: fixed;*/
+  position: fixed;
   top: 30px;
   left: 0px;
   right: 0px;
@@ -647,8 +647,8 @@ welcome
   background-image: url(../images/banner-bg.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; 
-  height: 100vh;
+  background-size: cover;
+  height: 40rem;
 }
 
 .welcome-area .header-text {
@@ -822,7 +822,6 @@ features
 
 .home-feature {
   padding-bottom: 0px;
-  padding-top: 30px;
   margin-top: -220px;
   z-index: 9;
 }
@@ -1013,7 +1012,6 @@ parallax & home seperator
   height: 32px;
   top: 160px;
   left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1031,7 +1029,6 @@ parallax & home seperator
   height: 32px;
   top: 140px;
   left: 70%;
-  background: url(../images/circle-dec.png) center center no-repeat;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
