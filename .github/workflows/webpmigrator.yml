@@ -47,8 +47,8 @@ jobs:
         webpQuality: '${WEBPCOMPRESSORQUALITY}'
       env:
         LD_LIBRARY_PATH: /usr/local/lib # Fix b/c python interferes with compression
-    - name: Change all code to change .jpg/.jpeg/.png to .webp
-      run: find . -type f -exec sed -i 's/.jpg/.webp/g; s/.jpeg/.webp/g; s/.png/.webp/g' {} +
+    - name: Change all code to change .jpg/.jpeg/.png to .webp only in in html/css and js files
+      run: find . -type f \( -iname "*.htm" -o -iname "*.html" -o -iname "*.css" -o -iname "*.js" \) -exec sed -i 's/.jpg/.webp/g; s/.jpeg/.webp/g; s/.png/.webp/g' {} +
     - name: Commit files
       run: | # Remove webp-converter as we don't want to commit it
         rm -r webp-converter
