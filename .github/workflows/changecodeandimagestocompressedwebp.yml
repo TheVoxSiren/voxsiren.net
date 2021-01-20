@@ -1,4 +1,4 @@
-name: Convert & Compress images to WEBP
+name: Change all images and code to compressed WEBP
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's jpg/jpeg/png in the commmit!
   push:
@@ -47,6 +47,8 @@ jobs:
         webpQuality: '${WEBPCOMPRESSORQUALITY}'
       env:
         LD_LIBRARY_PATH: /usr/local/lib # Fix b/c python interferes with compression
+    - name: Change all code to change .jpg/.jpeg/.png to .webp
+      run: find . -type f -exec sed -i 's/.jpg/.webp/g; s/.jpeg/.webp/g; s/.png/.webp/g' {} +
     - name: Commit files
       run: | # Remove webp-converter as we don't want to commit it
         rm -r webp-converter
