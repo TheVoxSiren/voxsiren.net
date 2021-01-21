@@ -1,12 +1,9 @@
 name: Change all images and code to compressed WEBP
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's jpg/jpeg/png in the commmit!
-  push:
-    branches: [main]
-    paths:
-      - '**.jpg'
-      - '**.jpeg'
-      - '**.png'
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 0 * * *' # 00:00 UTC
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,7 +15,6 @@ jobs:
         python-version: [3]
     env:
       WEBPCONVERTERARGS: --r -q=100 # These are args, --r is required, q is quality
-      WEBPCOMPRESSORQUALITY: 80 # only quality of webp compression
     steps:
     - uses: actions/checkout@v2 # This is a premade github action
       with:
@@ -44,7 +40,7 @@ jobs:
       with:
         githubToken: ${{ secrets.GITHUB_TOKEN }}
         compressOnly: true # Needed to not get a pullrequest and just compress
-        webpQuality: '${WEBPCOMPRESSORQUALITY}'
+        webpQuality: '80'
       env:
         LD_LIBRARY_PATH: /usr/local/lib # Fix b/c python interferes with compression
     - name: Change all code to change .jpg/.jpeg/.png to .webp only in in html/css and js files
@@ -70,7 +66,7 @@ jobs:
         labels: webpmigration
         body: |
           What did this pull do?
-          - Start automatically (or manually) when someone pushes png/jpg/jpeg images to main
+          - Start automatically when it's UTC 00:00 or manually
           - Convert all images from png/jpg/jpeg to WEBP format (100% quality, lossless)
           - Compress the WEBP images futher to AVIF levels of performance (80% quality compression)
           - Commit and push changes to a pull request, rather then direct commit (because of conflict if someone pushes to main during the workflow)
