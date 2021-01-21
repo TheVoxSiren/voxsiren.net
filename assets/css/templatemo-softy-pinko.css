@@ -644,7 +644,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../images/banner-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -856,7 +856,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.png);
+  background-image: url(../images/work-process-bg.webp);
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -979,7 +979,7 @@ parallax & home seperator
   width: 140%;
   height: 140%;
   opacity: .90;
-  background-image: url(../images/fun-facts-bg.png);
+  background-image: url(../images/fun-facts-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
