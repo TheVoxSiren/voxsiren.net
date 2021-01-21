@@ -65,7 +65,6 @@ jobs:
       uses: peter-evans/create-pull-request@v3
       with:
         delete-branch: true
-        committer: actions@github.com
         title: 'Migrate png/jpg/jpeg to compressed WEBP + code changes!'
         branch: webpmigration
         body: |
