@@ -67,6 +67,7 @@ jobs:
         delete-branch: true
         title: 'Migrate png/jpg/jpeg to compressed WEBP + code changes!'
         branch: webpmigration
+        labels: webpmigration
         body: |
           What did this pull do?
           - Start automatically (or manually) when someone pushes png/jpg/jpeg images to main
