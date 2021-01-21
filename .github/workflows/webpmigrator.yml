@@ -56,8 +56,10 @@ jobs:
         git config --local user.email "actions@github.com"
         git config --local user.name "github-actions[bot]"
         git diff --quiet && git diff --staged --quiet || git commit -am "Converted all jpg, jpeg and png files into compressed WEBP"
-    - name: Push changes
-      uses: ad-m/github-push-action@master # This is a premade github action
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+    #- name: Push changes
+    #  uses: ad-m/github-push-action@master # This is a premade github action
+    #  with:
+    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    #    branch: ${{ github.ref }}
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
