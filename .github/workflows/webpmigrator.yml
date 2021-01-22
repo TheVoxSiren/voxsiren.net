@@ -72,12 +72,12 @@ jobs:
     #      - Convert all images from png/jpg/jpeg to WEBP format (100% quality, lossless)
     #      - Compress the WEBP images futher to AVIF levels of performance (80% quality compression)
     #      - Commit and push changes to a pull request, rather then direct commit (because of conflict if someone pushes to main during the workflow)
-    #      
+    #
     #      Please review this pull carefully, as it will:
     #      - Change the looks of the images (due to conversion and compression)
     #      - Change the HTML/CSS/JS code to reflect the new file format
-    #      
+    #
     #      If this pull recieves a conflict, just close this pull and continue with the newer one
     #      As the newer pull will be based on a more recent commit and will include the current changes aswell
-    #      
+    #
     #      Branch should be deleted after merge/close of this pull.
