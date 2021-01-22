@@ -1,4 +1,4 @@
-name: Change all images and code to compressed WEBP
+name: Change images & code to compressed WEBP
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's jpg/jpeg/png in the commmit!
   push:
