@@ -10,7 +10,7 @@
 10051 IGNORE	(Relative Path Confusion | If we can use server side coding, we can fix this: https://www.zaproxy.org/docs/alerts/10051/#:~:text=Summary,relative%2C%20rather%20than%20absolute%20URLs.)
 40025 IGNORE	(Proxy Disclosure | This is because we use Cloudflare, we cannot fix this unless we don't use Cloudflare)
 10055 IGNORE	(CSP: Wildcard Directive | This is because we use a very oudated scrollReveal.js library. It edits the code in such a way that only unsafe-inline can be used. Perhaps if we can do server coding we can use the nonce- CSP in such a way to allow this)
-10098 IGNORE	(Cross-Domain Misconfiguration | This can be fixed if we have access to server coding to set "Access-Control-Allow-Origin" HTTP header to a more restrictive set of domains, or remove all CORS headers entirely)
+10098 IGNORE	(Cross-Domain Misconfiguration | This can be fixed if we have access to server coding to set Access-Control-Allow-Origin HTTP header to a more restrictive set of domains, or remove all CORS headers entirely)
 10038 IGNORE	(Content Security Policy (CSP) Header Not Set | It's actually set in meta tag of HTML, but again if we have server coding we can fix this, do note that the proxy also has a saying in this (it's probably fine))
 10053 IGNORE	(Apache Range Header DoS | Simply said, Github Pages has to update their Apache2 to the stable somewhere later then 2011... This is a good reason why Cloudflare Pages might be beter to move to)
 20012 IGNORE	(Anti-CSRF Tokens Check | This issue is the same as 10202, Paypal does this for us, so we can ignore this safely)
