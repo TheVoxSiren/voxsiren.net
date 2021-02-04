@@ -10,6 +10,7 @@
 [![Chromium HSTS preload](https://img.shields.io/hsts/preload/voxsiren.net)](https://hstspreload.org/?domain=voxsiren.net)
 [![Security Headers](https://img.shields.io/security-headers?url=https%3A%2F%2Fvoxsiren.net)](https://securityheaders.com/?q=https%3A%2F%2Fvoxsiren.net&followRedirects=on)
 [![SSL-labs Grade](https://img.shields.io/badge/SSL%20labs-A%2B-brightgreen)](https://www.ssllabs.com/ssltest/analyze.html?d=voxsiren.net)
+[![Scan website with OWASP full scan](https://github.com/thevoxsiren/VoxSiren.github.io/workflows/Scan%20website%20with%20OWASP%20full%20scan/badge.svg)](https://github.com/TheVoxSiren/VoxSiren.github.io/actions?query=workflow%3A%22Scan+website+with+OWASP+full+scan%22)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Fvoxsiren.net)](https://www.githubstatus.com/)
 
 
