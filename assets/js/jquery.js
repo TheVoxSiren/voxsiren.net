@@ -1577,7 +1577,7 @@ var siblings = function( n, elem ) {
 };
 var rneedsContext = jQuery.expr.match.needsContext;
 function nodeName( elem, name ) {
-};
+}
 var rsingleTag = ( /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i );
 // Implement the identical functionality for filter and not
 function winnow( elements, qualifier, not ) {
