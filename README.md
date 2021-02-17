@@ -1,5 +1,5 @@
 # voxsiren.net
-[![Website](https://img.shields.io/website?url=https%3A%2F%2Fvoxsiren.net&logo=github)](https://www.githubstatus.com/)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fvoxsiren.net&logo=github)](https://www.cloudflarestatus.com/)
 
 
 <img align="left" height="46" src="https://cdn.iconscout.com/icon/free/png-512/code-280-460136.png" alt="Github Actions-user icon">
