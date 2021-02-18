@@ -34,4 +34,4 @@
 
 ## Mobile Pagespeed score
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Get%20Pagespeed%20results%20daily?event=schedule&label=Update%20pagespeed%20score&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Get+Pagespeed+results+daily%22)
-[![Mobile pagespeed score](/reports/pagespeedresultmobile.svg "Mobile pagespeed score")](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fvoxsiren.net%2F)
+[![Mobile pagespeed score](/reports/pagespeedresultmobile.svg "Mobile pagespeed score")](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https%3A%2F%2Fvoxsiren.net%2F)
