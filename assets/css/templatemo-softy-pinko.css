@@ -356,7 +356,7 @@ font & reset css
 ---------------------------------------------
 */
 
-html, body, div, span, h1, h2, h3, p, a, code, img, strong, i, ul, li, header, nav, section, footer {
+html, body, div, span, h1, h2, h3, p, a, img, strong, i, ul, li, header, nav, section, footer {
   margin: 0;
   padding: 0;
   border: 0;
