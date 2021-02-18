@@ -1,27 +1,3 @@
-/*
-Softy Pinko
-https://templatemo.com/tm-535-softy-pinko
-*/
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. welcome
-06. features
-07. team
-08. pricing
-09. blog
-10. contact
-11. footer
-12. preloader
-/*
----------------------------------------------
-header
----------------------------------------------
-*/
 .header-area {
   position: fixed;
   top: 30px;
@@ -242,11 +218,6 @@ span:after {
   }
 }
 
-/*
----------------------------------------------
-welcome
----------------------------------------------
-*/
 .welcome-area {
   overflow: hidden;
   position: relative;
@@ -350,12 +321,6 @@ welcome
   }
 }
 
-/*
----------------------------------------------
-font & reset css
----------------------------------------------
-*/
-
 html, body, div, span, h1, h2, h3, p, a, img, strong, i, ul, li, header, nav, section, footer {
   margin: 0;
   padding: 0;
@@ -397,11 +362,6 @@ ul {
   margin-bottom: 0;
 }
 
-/*
----------------------------------------------
-global styles
----------------------------------------------
-*/
 html {
   background: #fff;
   font-family: "Raleway", sans-serif;
@@ -539,12 +499,6 @@ button.main-button:hover {
   background-color: #da1058;
 }
 
-
-/*
----------------------------------------------
-features
----------------------------------------------
-*/
 .features-small-item {
   cursor: pointer;
   display: block;
@@ -629,11 +583,6 @@ features
   }
 }
 
-/*
----------------------------------------------
-parallax & home seperator
----------------------------------------------
-*/
 .mini {
   min-height: 215px;
   overflow: hidden;
@@ -862,11 +811,6 @@ parallax & home seperator
   }
 }
 
-/*
----------------------------------------------
-team
----------------------------------------------
-*/
 .team-item {
   background: #fff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
@@ -934,11 +878,6 @@ team
   line-height: 26px;
 }
 
-/*
----------------------------------------------
-pricing
----------------------------------------------
-*/
 .pricing-item {
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
@@ -1035,11 +974,6 @@ pricing
   text-decoration: none;
 }
 
-/*
----------------------------------------------
-blog
----------------------------------------------
-*/
 .blog-post-thumb {
   text-align: center;
   margin-bottom: 30px;
@@ -1087,45 +1021,10 @@ blog
   display: inline-block;
 }
 
-
-/*
----------------------------------------------
-contact
----------------------------------------------
-*/
-
 #contact-us {
   padding: 160px 0;
 }
 
-.contact-form input,
-.contact-form textarea {
-  color: rgb(97, 97, 97);
-  font-size: 14px;
-  border: 1px solid #eee;
-  width: 100%;
-  height: 50px;
-  outline: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 25px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin-bottom: 30px;
-}
-
-.contact-form textarea {
-  height: 150px;
-  resize: none;
-  padding: 20px;
-}
-
-/*
----------------------------------------------
-footer
----------------------------------------------
-*/
 footer {
   background-image: linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
   padding-top: 30px;
