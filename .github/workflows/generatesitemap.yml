@@ -24,7 +24,7 @@ jobs:
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
         echo "url-count = ${{ steps.sitemap.outputs.url-count }}"
-        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }
+        echo "excluded-count = ${{ steps.sitemap.outputs.excluded-count }}"
     - name: Commit files
       run: |
         git add .
