@@ -177,9 +177,9 @@
 						<path  fill-rule="nonzero" d="M20.3 17.91h1.48c.45 0 .85-.05 1.2-.15l.39-1.18 1.07-3.3a2.64 2.64 0 0 0-.28-.37c-.55-.6-1.36-.91-2.42-.91H18v9h2.3V17.9zm1.96-3.84c.22.22.33.5.33.87 0 .36-.1.65-.29.87-.2.23-.59.35-1.15.35h-.86v-2.41h.87c.52 0 .89.1 1.1.32z"></path>
 					</g>
 					<!-- No badges. -->
-					<rect class="lh-gauge--pwa__component lh-gauge--pwa__na-line lh-gauge--pwa__visible" fill="#FFFFFF" x="20" y="32" width="20" height="4" rx="2"></rect>
+					<rect class="lh-gauge--pwa__component lh-gauge--pwa__na-line lh-gauge--pwa__invisible" fill="#FFFFFF" x="20" y="32" width="20" height="4" rx="2"></rect>
 					<!-- Just fast and reliable. -->
-					<g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-badge lh-gauge--pwa__invisible" transform="translate(20, 29)">
+					<g class="lh-gauge--pwa__component lh-gauge--pwa__fast-reliable-badge lh-gauge--pwa__visible" transform="translate(20, 29)">
 						<path fill="url(#lh-gauge--pwa__fast-reliable__shadow-gradient-0)" d="M33.63 19.49A30 30 0 0 1 16.2 30.36L3 17.14 17.14 3l16.49 16.49z"></path>
 						<use href="#lh-gauge--pwa__fast-reliable-badge-0"></use>
 					</g>
