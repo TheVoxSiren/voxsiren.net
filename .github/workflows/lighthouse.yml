@@ -1,0 +1,22 @@
+name: Test Lighthouse Check
+on: [pull_request]
+
+jobs:
+  lighthouse-check:
+    env:
+        RESULTSFOLDER: reports
+        URLS: 'https://voxsiren.net' # 'http://site.ext,https://another.ext'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - run: mkdir -p ${RESULTSFOLDER}
+      - name: Run Lighthouse
+        uses: foo-software/lighthouse-check-action@master
+        with:
+          accessToken: ${{ secrets.GITHUB_TOKEN }}
+          outputDirectory: ${RESULTSFOLDER}
+          urls: ${URLS}
+      - name: Upload artifacts
+        uses: actions/upload-artifact@master
+        with:
+          name: Lighthouse reports
