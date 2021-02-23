@@ -8,17 +8,15 @@ on:
 
 jobs:
   lighthouse-check:
-    env:
-        RESULTSFOLDER: reports
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: mkdir -p ${RESULTSFOLDER}
+      - run: mkdir -p reports
       - name: Run Lighthouse
         uses: foo-software/lighthouse-check-action@master
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
-          outputDirectory: ${RESULTSFOLDER}
+          outputDirectory: reports
           urls: 'https://voxsiren.net' # 'http://site.ext,https://another.ext'
       - name: Upload artifacts
         uses: actions/upload-artifact@master
