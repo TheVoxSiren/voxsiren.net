@@ -10,7 +10,6 @@ jobs:
   lighthouse-check:
     env:
         RESULTSFOLDER: reports
-        URLS: 'https://voxsiren.net' # 'http://site.ext,https://another.ext'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
@@ -20,7 +19,7 @@ jobs:
         with:
           accessToken: ${{ secrets.GITHUB_TOKEN }}
           outputDirectory: ${RESULTSFOLDER}
-          urls: ${URLS}
+          urls: 'https://voxsiren.net' # 'http://site.ext,https://another.ext'
       - name: Upload artifacts
         uses: actions/upload-artifact@master
         with:
