@@ -18,4 +18,4 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           target: 'https://voxsiren.net/'
-          rules_file_name: '.github/.zap/rules.tsv'
+          #rules_file_name: '.github/.zap/rules.tsv'
