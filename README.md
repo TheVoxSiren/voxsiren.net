@@ -36,3 +36,22 @@
 ## Mobile Pagespeed score
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Get%20Pagespeed%20results%20daily?event=schedule&label=Update%20pagespeed%20score&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Get+Pagespeed+results+daily%22)
 [![Mobile pagespeed score](/reports/pagespeedresultmobile.svg "Mobile pagespeed score")](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https%3A%2F%2Fvoxsiren.net%2F)
+
+## Todo
+- [x] Preconnect to 3rd party urls
+- [ ] Use CriticalCSS automatically https://github.com/addyosmani/critical/issues/484
+- [x] Preload stylesheets correct
+- [x] Use most libraries from CDN if not minimized from origin
+- [x] Defer and preload all JS.
+- [x] Use appropiate tags to make a nice url preview in all socialmedia
+- [ ] Have correct CSP, needs updating of the scrollreveal.js https://github.com/jlmakes/scrollreveal/pull/431 to remove unsafe-inline from style-src
+- [x] Only loading in lazy for offscreen images
+- [x] Automatically always use WEBP above png/jpg/jpeg.
+- [ ] Automatically serve AVIF before WEBP.
+- [x] Specify exact dimenions for all images
+- [x] Have all code be valid and optimized and possible local files automatically stripped down of unused styles
+- [x] Generate XML sitemap on each commit for SEO.
+- [ ] Use SEO
+- [x] Keep README up-to-date automatically
+- [x] Have an issue with all security issues
+- [ ] Move domain from OVH to Cloudflare
