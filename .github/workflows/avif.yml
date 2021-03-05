@@ -18,9 +18,8 @@ jobs:
     steps:
       - name: Install dependencies
         run: | # We install webp and then the webp-converter
-          go get github.com/Kagami/go-avif
-          go get github.com/Kagami/go-avif/...
-          avif -h
+          npm i -g @funboxteam/optimizt
+          optimizt -h
 
       - uses: actions/checkout@v2 # This is a premade github action
         with:
