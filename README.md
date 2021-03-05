@@ -55,3 +55,4 @@
 - [x] Keep README up-to-date automatically
 - [x] Have an issue with all security issues
 - [ ] Move domain from OVH to Cloudflare
+- [ ] Be able to improve security headers
