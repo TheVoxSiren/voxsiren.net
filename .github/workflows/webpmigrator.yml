@@ -25,7 +25,7 @@ jobs:
           python-version: ${{ matrix.python-version }} # Adept to strategy to use python3
       - name: Install dependencies
         run: | # We install webp and then the webp-converter
-          sudo apt install webp -y
+          sudo apt-get install webp -y
           pip3 install webp-converter
       - uses: actions/checkout@v2 # This is a premade github action
         with:
