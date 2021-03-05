@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: | # We install webp and then the webp-converter
-          sudo brew install joedrago/repo/avifenc
+          brew install joedrago/repo/colorist
 
       - uses: actions/checkout@v2 # This is a premade github action
         with:
