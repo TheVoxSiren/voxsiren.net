@@ -17,7 +17,7 @@ jobs:
       matrix:
         python-version: [3]
     env:
-      WEBPCONVERTERARGS: -q=100 # These are args, --r is replace, q is quality
+      WEBPCONVERTERARGS: -o assets/images/ -q=100 # These are args, --r is replace, q is quality, -o is output webp
     steps:
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v2
