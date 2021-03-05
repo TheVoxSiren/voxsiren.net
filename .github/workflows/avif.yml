@@ -1,4 +1,4 @@
-name: Convert media and code to WEBP
+name: AVIF
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's jpg/jpeg/png in the commmit!
   push:
