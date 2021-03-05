@@ -1,2 +1,3 @@
 User-agent:*
 Allow: *.css
+Disallow: https://voxsiren.net/404.html
