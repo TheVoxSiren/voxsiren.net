@@ -54,5 +54,5 @@
 - [ ] Use SEO
 - [x] Keep README up-to-date automatically
 - [x] Have an issue with all security issues
-- [ ] Move domain from OVH to Cloudflare
+- [ ] Move domain from OVH to Cloudflare **(possible 5-12-2021)** https://developers.cloudflare.com/registrar/domain-transfers/transfer-to-cloudflare https://documentation.online.net/en/web/domain-name/tutorial/transfer-domain-ovh
 - [ ] Be able to improve security headers
