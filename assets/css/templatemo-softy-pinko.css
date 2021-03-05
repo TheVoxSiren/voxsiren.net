@@ -24,6 +24,8 @@
 
 .header-area .main-nav .logo img {
   transition: all 0.3s ease 0s;
+  user-drag: none; 
+  user-select: none;
 }
 
 .header-area .main-nav .nav {
