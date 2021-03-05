@@ -18,8 +18,8 @@ jobs:
     steps:
       - name: Install dependencies
         run: | # We install webp and then the webp-converter
-          sudo apt update
-          sudo apt-get install libaom-dev -y
+          sudo apt-get update
+          sudo apt-get install libaom0 -y
           go get github.com/Kagami/go-avif/...
           avif -h
 
