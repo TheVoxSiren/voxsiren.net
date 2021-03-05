@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Install dependencies
         run: | # We install webp and then the webp-converter
-          sudo npm i -g @funboxteam/optimizt
+          sudo npm i -g @funboxteam/optimizt --unsafe-perm
           optimizt -h
 
       - uses: actions/checkout@v2 # This is a premade github action
