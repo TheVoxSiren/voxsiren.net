@@ -13,9 +13,6 @@ on:
 jobs:
   Convert-to-WEBP:
     runs-on: ubuntu-latest
-    strategy: # Proper way to prepare which python to use
-      matrix:
-        python-version: [3]
     env:
       WEBPCONVERTERARGS: -o assets/images/ -q=100 # These are args, --r is replace, q is quality, -o is output webp
     steps:
@@ -29,15 +26,6 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: run webpc
         run: webpc ${WEBPCONVERTERARGS}
-      - name: Compress Images
-        id: calibre
-        uses: calibreapp/image-actions@main
-        with:
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          compressOnly: true # Needed to not get a pullrequest and just compress
-          webpQuality: "80"
-        env:
-          LD_LIBRARY_PATH: /usr/local/lib # Fix b/c python interferes with compression
       #- name: Change all code to change .jpg/.jpeg/.png to .webp only in in html/css and js files
       #  run: find . -type f \( -iname "*.htm" -o -iname "*.html" -o -iname "*.css" -o -iname "*.js" \) -exec sed -i 's/.jpg/.webp/g; s/.jpeg/.webp/g; s/.png/.webp/g' {} +
       - name: Commit files
