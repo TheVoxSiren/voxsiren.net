@@ -29,7 +29,7 @@
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/PurgeCSS?event=schedule&logo=github-actions&logoColor=f5f5f5&label=PurgeCSS)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3APurgeCSS)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Full%20OWASP%20scan?event=schedule&label=Full%20OWASP%20scan&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Full+OWASP+scan%22)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Generate%20xml%20sitemap?label=Generate%20Sitemap&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Generate+xml+sitemap%22)
-
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Lighthouse%20CI?label=Lighthouse%20test&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Generate+xml+sitemap%22)
 
 <img align="left" height="50" src="https://cdn.worldvectorlogo.com/logos/google-lighthouse-icon-may-2019-.svg" alt="Google Lighthouse icon">
 
