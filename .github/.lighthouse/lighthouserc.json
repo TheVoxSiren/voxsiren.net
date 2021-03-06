@@ -1,8 +1,8 @@
 {
   "ci": {
     "collect": {
-      "staticDistDir": "./"
-      "numberOfRuns": "3"
+      "staticDistDir": "./",
+      "numberOfRuns": 3
     }
   }
 }
