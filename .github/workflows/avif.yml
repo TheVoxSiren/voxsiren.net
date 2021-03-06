@@ -62,7 +62,7 @@ jobs:
         with:
           delete-branch: true
           title: 'Converted & Optimized JPG/JPEG/PNG to WEBP & AVIF!'
-          branch: conopt images
+          branch: conopt-images
           labels: conopt images/webp/avif
           body: |
             What did this pull do?
@@ -80,4 +80,4 @@ jobs:
             If this pull recieves a conflict, just close this pull and continue with the newer one
             As the newer pull will be based on a more recent commit and will include the current changes aswell
       
-            Branch should be deleted after merge/close of this pull.
+            Delete the Branch after the pull is merged.
