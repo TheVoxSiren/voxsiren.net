@@ -5,7 +5,7 @@
       "numberOfRuns": 3
     },
     "assertions": {
-      "uses-http2": "off"
+      "uses-http2": "on"
     }
   }
 }
