@@ -1,35 +1,106 @@
 [
   {
-    "path": "/*",
-    "resourceSizes": [
-      {"resourceType":"document","budget":20},
-      {"resourceType":"script","budget":20},
-      {"resourceType":"stylesheet","budget":20},
-      {"resourceType":"image","budget":20},
-      {"resourceType":"media","budget":20},
-      {"resourceType":"font","budget":20},
-      {"resourceType":"other","budget":20},
-      {"resourceType":"third-party","budget":20},
-      {"resourceType":"total","budget":20},
-    ],
+    "path": "/",
     "timings": [
-          {
-            "metric": "interactive",
-            "budget": 3000
-          },
-          {
-            "metric": "first-meaningful-paint",
-            "budget": 1000
-          }
-        ],
-        "resourceSizes": [
-          {
-            "resourceType": "script",
-            "budget": 125
-          },
-          {
-            "resourceType": "total",
-            "budget": 300
+        {
+          "metric": "first-contentful-paint",
+          "budget": 1340
+        },
+        {
+          "metric": "speed-index",
+          "budget": 1940
+        },
+        {
+          "metric": "largest-contentful-paint",
+          "budget": 1780
+        },
+        {
+          "metric": "interactive",
+          "budget": 2000
+        },
+        {
+          "metric": "total-blocking-time",
+          "budget": 130
+        },
+        {
+          "metric": "cumulative-layout-shift",
+          "budget": 3
+        }
+    ],
+    "resourceSizes": [
+      {
+        "resourceType": "document",
+        "budget": 125
+      },
+      {
+        "resourceType": "font",
+        "budget": 125
+      },
+      {
+        "resourceType": "image",
+        "budget": 125
+      },
+      {
+        "resourceType": "media",
+        "budget": 125
+      },
+      {
+        "resourceType": "other",
+        "budget": 125
+      },
+      {
+        "resourceType": "script",
+        "budget": 125
+      },
+      {
+        "resourceType": "stylesheet",
+        "budget": 125
+      },
+      {
+        "resourceType": "third-party",
+        "budget": 125
+      },
+      {
+        "resourceType": "total",
+        "budget": 300
+      }
+    ],
+    "resourceCounts": [
+      {
+        "resourceType": "document",
+        "budget": 5
+      },
+      {
+        "resourceType": "font",
+        "budget": 5
+      },
+      {
+        "resourceType": "image",
+        "budget": 15
+      },
+      {
+        "resourceType": "media",
+        "budget": 10
+      },
+      {
+        "resourceType": "other",
+        "budget": 10
+      },
+      {
+        "resourceType": "script",
+        "budget": 10
+      },
+      {
+        "resourceType": "stylesheet",
+        "budget": 10
+      },
+      {
+        "resourceType": "third-party",
+        "budget": 10
+      },
+      {
+        "resourceType": "total",
+        "budget": 40
       }
     ]
   }
