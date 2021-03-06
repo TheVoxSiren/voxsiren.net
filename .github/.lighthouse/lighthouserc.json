@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./",
-      "autodiscoverUrlBlocklist ": "http://localhost:36165/404.html"
+      "autodiscoverUrlBlocklist ": "404.html"
     }
   }
 }
