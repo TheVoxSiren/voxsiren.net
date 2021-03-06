@@ -25,7 +25,7 @@
 <img align="left" height="46" src="https://avatars.githubusercontent.com/u/65916846?s=60&u=c2be3ca7b76add4f8d8ed872c7bae0a7a9a71991&v=4" alt="Github Actions-user icon">
 
 ## Automated workflows
-![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Change%20images%20&%20code%20to%20compressed%20WEBP?event=push&logo=github-actions&logoColor=f5f5f5&label=WebP%20Conversion)
+[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Optimizt?event=push&logo=github-actions&logoColor=f5f5f5&label=Optimizt)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/optimizt.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/PurgeCSS?event=schedule&logo=github-actions&logoColor=f5f5f5&label=PurgeCSS)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3APurgeCSS)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Full%20OWASP%20scan?event=schedule&label=Full%20OWASP%20scan&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Full+OWASP+scan%22)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Generate%20xml%20sitemap?label=Generate%20Sitemap&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions?query=workflow%3A%22Generate+xml+sitemap%22)
@@ -47,7 +47,7 @@
 - [ ] Have correct CSP, needs updating of the scrollreveal.js https://github.com/jlmakes/scrollreveal/pull/431 to remove unsafe-inline from style-src
 - [x] Only loading in lazy for offscreen images
 - [x] Automatically always use WEBP above png/jpg/jpeg.
-- [ ] Automatically serve AVIF before WEBP.
+- [x] Automatically make WEBP and AVIF.
 - [x] Specify exact dimenions for all images
 - [x] Have all code be valid and optimized and possible local files automatically stripped down of unused styles
 - [x] Generate XML sitemap on each commit for SEO.
