@@ -57,3 +57,4 @@
 - [ ] Move domain from OVH to Cloudflare **(possible 12-3-2021)** https://developers.cloudflare.com/registrar/domain-transfers/transfer-to-cloudflare https://documentation.online.net/en/web/domain-name/tutorial/transfer-domain-ovh
 - [ ] Be able to improve security headers
 - [x] Use Opengraph tags for a nice preview
+- [x] Integrate Lighthouse CI into workflow (might also help to advice about defer/preload/prefetch etc)
