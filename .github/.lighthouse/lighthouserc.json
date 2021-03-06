@@ -5,7 +5,7 @@
       "numberOfRuns": 3
     },
     "assert": {
-      "preset": "lighthouse:all"
+      "preset": "lighthouse:all",
       "assertions": {
         "uses-http2": "on"
       }
