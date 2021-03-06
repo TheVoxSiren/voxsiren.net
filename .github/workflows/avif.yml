@@ -62,7 +62,7 @@ jobs:
         with:
           delete-branch: true
           title: 'Converted & Optimized JPG/JPEG/PNG to WEBP & AVIF!'
-          branch: conopt images webp & avif
+          branch: conopt images
           labels: conopt images/webp/avif
           body: |
             What did this pull do?
