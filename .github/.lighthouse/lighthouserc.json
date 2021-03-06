@@ -2,6 +2,7 @@
   "ci": {
     "collect": {
       "staticDistDir": "./"
+      "numberOfRuns": "3"
     }
   }
 }
