@@ -4,8 +4,11 @@
       "staticDistDir": "./",
       "numberOfRuns": 3
     },
-    "assertions": {
-      "uses-http2": "on"
+    "assert": {
+      "preset": "lighthouse:all"
+      "assertions": {
+        "uses-http2": "on"
+      }
     }
   }
 }
