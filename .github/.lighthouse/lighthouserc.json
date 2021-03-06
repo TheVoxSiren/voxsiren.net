@@ -7,7 +7,7 @@
     "assert": {
       "preset": "lighthouse:all",
       "assertions": {
-        "uses-http2": "on"
+        "uses-http2": "off"
       }
     }
   }
