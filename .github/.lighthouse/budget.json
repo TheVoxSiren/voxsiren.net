@@ -1,0 +1,36 @@
+[
+  {
+    "path": "/*",
+    "resourceSizes": [
+      {"resourceType":"document","budget":20},
+      {"resourceType":"script","budget":20},
+      {"resourceType":"stylesheet","budget":20},
+      {"resourceType":"image","budget":20},
+      {"resourceType":"media","budget":20},
+      {"resourceType":"font","budget":20},
+      {"resourceType":"other","budget":20},
+      {"resourceType":"third-party","budget":20},
+      {"resourceType":"total","budget":20},
+    ],
+    "timings": [
+          {
+            "metric": "interactive",
+            "budget": 3000
+          },
+          {
+            "metric": "first-meaningful-paint",
+            "budget": 1000
+          }
+        ],
+        "resourceSizes": [
+          {
+            "resourceType": "script",
+            "budget": 125
+          },
+          {
+            "resourceType": "total",
+            "budget": 300
+      }
+    ]
+  }
+]
