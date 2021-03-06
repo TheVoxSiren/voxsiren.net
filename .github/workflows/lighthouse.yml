@@ -1,11 +1,19 @@
-name: Lighthouse CI
+name: Run Lighthouse CI
 on:
   push:
-    branches:
-      - main
+    paths:
+      - "**.webp"
+      - "**.avif"
+      - "**.html"
+      - "**.css"
+      - "**.js"
   pull_request:
-    branches:
-      - main
+    paths:
+      - "**.webp"
+      - "**.avif"
+      - "**.html"
+      - "**.css"
+      - "**.js"
   workflow_dispatch:
 
 jobs:
