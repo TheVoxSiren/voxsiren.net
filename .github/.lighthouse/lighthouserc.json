@@ -4,7 +4,7 @@
       "staticDistDir": "./",
       "numberOfRuns": 3
     },
-    "assertions" {
+    "assertions": {
       "uses-http2": "off"
     }
   }
