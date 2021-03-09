@@ -76,6 +76,12 @@ IF this is more desired, use inspiration from there and edit the file types acco
 Basically this workflow is only useful if a badge like [this](https://img.shields.io/mozilla-observatory/grade-score/voxsiren.net?publish) is used and the user cares enough to keep this badge up-to-date.
 Just change the last part of the run part to the website it needs to check. I will check only once every three days.
 
+# criticalCSS.yml
+This workflow will check every html file in the project (from the root) and will check in assets/css for all the .css files.
+Based on all the css files it will generate the critical css and put it in a minimized internal css style tag. The <style> tags that are multiple lines will stay intact!
+This workflow also has a very clever sed command [thanks to Armali](https://stackoverflow.com/a/66552948/15361696)! This sed command will remove the one line internal css so that critical can insert the newest one!
+This all will not generate another commit if nothing changed within the critical view of the html page. Critical will also fix some styling as a bonus!
+
 # README.MD
 The README.MD in the root folder is also made by me. It's largely shields.io and it's best to look there for more information. The side images are done in HTML and all the other parts are in Markdown.
 All badges are from shields.io to keep colours and style consitent. A shield how I make it is made as followed:
@@ -101,8 +107,3 @@ If you're brave, you can even add a custom icon with a base64 string. It's possi
 # Final note
 This folder contains all my experience with Github Workflow and personally I enjoy using it. I believe if users use Github Pages or anything else which Github functions as a code hosing provider.
 Using some of these workflows can improve the site's performance futher which makes everyone happy :). You also have my permission to do whatever you wish with these workflows, crediting would be nice.
-
-# TODO
-Need to be able to use CriticalCSS in Github Workflow so that each webpage contains the critical CSS automatically. Should be done in a seperate branch as pages get updated and removing inlline critical css is a pain.
-Doing it in <style> should be possible, but might not work as good as inline. As of writing just getting the package to work has proven to be a challange.
-
