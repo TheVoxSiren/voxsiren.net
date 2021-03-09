@@ -1,4 +1,4 @@
-name: Optimizt
+name: Generate AVIF and WEBP
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's JPG/JPEG/PNG in the commmit!
   push:
