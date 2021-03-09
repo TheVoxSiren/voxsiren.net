@@ -39,7 +39,7 @@
 
 ## Todo
 - [x] Preconnect to 3rd party urls
-- [ ] Use CriticalCSS automatically https://github.com/addyosmani/critical/issues/484
+- [x] Use CriticalCSS automatically
 - [x] Preload stylesheets correct
 - [x] Use most libraries from CDN if not minimized from origin
 - [x] Defer and preload all JS.
