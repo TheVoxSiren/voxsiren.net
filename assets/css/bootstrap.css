@@ -126,7 +126,6 @@ h3 {
     }
 }
 .row {
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -235,7 +234,6 @@ h3 {
     }
 }
 .nav {
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
