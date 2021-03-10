@@ -505,14 +505,9 @@ button.main-button:hover {
   display: block;
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  -webkit-transition: all 0.1s ease 0s;
-  -moz-transition: all 0.1s ease 0s;
-  -o-transition: all 0.1s ease 0s;
   transition: all 0.1s ease 0s;
   position: relative;
   margin-bottom: 30px;
@@ -523,9 +518,6 @@ button.main-button:hover {
 }
 
 .features-small-item .icon {
-  -webkit-transition: all 0.1s ease 0s;
-  -moz-transition: all 0.1s ease 0s;
-  -o-transition: all 0.1s ease 0s;
   transition: all 0.1s ease 0s;
   width: 90px;
   height: 90px;
@@ -533,9 +525,7 @@ button.main-button:hover {
   margin: auto;
   position: relative;
   margin-bottom: 30px;
-  background: #8261ee;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  background: #8261ee;;
   border-radius: 50%;
 }
 
