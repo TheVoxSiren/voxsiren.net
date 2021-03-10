@@ -20,11 +20,11 @@ jobs:
         run: | # Find each HTML file on root. remove online (critical)css. Add critical css to temp html file. Rename temp html file to original.
           find . -type f \( -iname "*.htm" -o -iname "*.html" \)|while read fname; do
             sed -i '/<style>.*<\/style>$/d' "$fname"
-            critical "$fname" --base . --inline --css assets/css/*.css | sponge "$fname"
+            critical "$fname" --base . --inline --css assets/css/*.css > "$fname"-crit
+            mv "$fname"-crit "$fname"
           done
           
-        # critical "$fname" --base . --inline --css assets/css/*.css > "$fname"-crit
-        # mv "$fname"-crit "$fname"
+
       - name: Commit files
         run: |
           git add .
