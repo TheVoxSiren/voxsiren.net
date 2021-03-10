@@ -23,8 +23,6 @@ jobs:
             critical "$fname" --base . --inline --css assets/css/*.css > "$fname"-crit
             mv "$fname"-crit "$fname"
           done
-          
-
       - name: Commit files
         run: |
           git add .
