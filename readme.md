@@ -25,14 +25,14 @@
 <img align="left" height="46" src="https://avatars.githubusercontent.com/u/65916846?s=60&u=c2be3ca7b76add4f8d8ed872c7bae0a7a9a71991&v=4" alt="Github Actions-user icon">
 
 ## Automated workflows
-[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Apply%20CriticalCSS?event=push&label=Lighthouse%20tests&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/criticalCSS.yml)
+[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Apply%20CriticalCSS?event=push&label=Apply%20CriticalCSS&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/criticalCSS.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Full%20OWASP%20scan?event=schedule&label=Full%20OWASP%20scan&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/owaspfullsecscan.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Optimizt?event=push&logo=github-actions&logoColor=f5f5f5&label=Optimizt)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/optimizt.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Generate%20xml%20sitemap?event=push&label=Generate%20Sitemap&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/generatesitemap.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Get%20Pagespeed%20results%20daily?event=schedule&label=Update%20pagespeed%20score&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/pagespeed.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Refresh%20Observatory%20score?event=schedule&logo=github-actions&logoColor=f5f5f5&label=PurgeCSS)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/refreshobservatoryscore.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/PurgeCSS?event=schedule&logo=github-actions&logoColor=f5f5f5&label=PurgeCSS)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/purgecss.yml)
-[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Lighthouse%20CI?event=push&label=Apply%20CriticalCSS&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/lighthouse.yml)
+[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Lighthouse%20CI?event=push&label=Lighthouse%20tests&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/lighthouse.yml)
 
 <img align="left" height="50" src="https://cdn.worldvectorlogo.com/logos/google-lighthouse-icon-may-2019-.svg" alt="Google Lighthouse icon">
 
