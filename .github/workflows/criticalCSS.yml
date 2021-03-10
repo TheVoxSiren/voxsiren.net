@@ -17,7 +17,7 @@ jobs:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: Run critical
-        run: |
+        run: | # Find each HTML file on root. remove online (critical)css. Add critical css to temp html file. Rename temp html file to original.
           find . -type f \( -iname "*.htm" -o -iname "*.html" \)|while read fname; do
             sed -i '/<style>.*<\/style>$/d' "$fname"
             critical "$fname" --base . --inline --css assets/css/*.css > "$fname"-crit
