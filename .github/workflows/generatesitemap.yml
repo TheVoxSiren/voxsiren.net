@@ -4,9 +4,6 @@ on:
   schedule:
     # * is a special character in YAML so you have to quote this string
     - cron: "0 0 * * *" # Every day at 00:00 UTC
-  #push:
-  #  branches:
-  #    - main
   workflow_dispatch:
 
 jobs:
