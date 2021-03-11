@@ -15,7 +15,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Convert-to-WEBP:
+  Convert-Compress:
     runs-on: ubuntu-latest
     env:
       OPTIMIZTCONVERTERARGS: --avif --webp . # convert to avif and webp for all JPG/JPEG/PNG files in this folder
@@ -35,10 +35,10 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true # Needed to not get a pullrequest and just compress
-          jpegQuality: '80'
+          jpegQuality: '100'
           jpegProgressive: false
-          pngQuality: '80'
-          webpQuality: "80"
+          pngQuality: '100'
+          webpQuality: "100"
       - name: Commit files
         run: |
           git add .
@@ -50,3 +50,16 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
+  lighthouse:
+    needs: Convert-Compress
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: rm 404.html
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v7
+        with:
+          budgetPath: '.github/.lighthouse/budget.json' # test performance budgets
+          configPath: '.github/.lighthouse/lighthouserc.json'
+          uploadArtifacts: true # save results as an action artifacts
+          temporaryPublicStorage: true # upload lighthouse report to the temporary storage
