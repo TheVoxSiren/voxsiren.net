@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  purgecss:
+  optimizecss:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2 # This is a premade github action
@@ -42,7 +42,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
   lighthouse:
-    needs: purgecss
+    needs: optimizecss
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
