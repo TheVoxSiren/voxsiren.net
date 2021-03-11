@@ -2,11 +2,7 @@ name: Refresh Observatory score
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-<<<<<<< HEAD
     - cron:  '0 0 */2 * *' # every other day at 00:00 UTC
-=======
-    - cron:  '0 0 */3 * *' # every day at 00:00 UTC
->>>>>>> f073295 (done)
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

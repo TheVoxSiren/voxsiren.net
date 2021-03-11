@@ -1,24 +1,12 @@
-<<<<<<< HEAD
 name: Generate AVIF and WEBP
 on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's JPG/JPEG/PNG in the commmit!
   push:
-=======
-name: Optimizt
-on:
-  # Triggers the workflow on push or pull request events but only for the main branch and only when there's JPG/JPEG/PNG in the commmit!
-  push:
-    branches: [main]
->>>>>>> f073295 (done)
     paths:
       - "**.jpg"
       - "**.jpeg"
       - "**.png"
   pull_request:
-<<<<<<< HEAD
-=======
-    branches: [main]
->>>>>>> f073295 (done)
     paths:
       - "**.jpg"
       - "**.jpeg"
@@ -27,11 +15,7 @@ on:
   workflow_dispatch:
 
 jobs:
-<<<<<<< HEAD
   Convert-Compress:
-=======
-  Convert-to-WEBP:
->>>>>>> f073295 (done)
     runs-on: ubuntu-latest
     env:
       OPTIMIZTCONVERTERARGS: --avif --webp . # convert to avif and webp for all JPG/JPEG/PNG files in this folder
@@ -51,17 +35,10 @@ jobs:
         with:
           githubToken: ${{ secrets.GITHUB_TOKEN }}
           compressOnly: true # Needed to not get a pullrequest and just compress
-<<<<<<< HEAD
           jpegQuality: '100'
           jpegProgressive: false
           pngQuality: '100'
           webpQuality: "100"
-=======
-          jpegQuality: '80'
-          jpegProgressive: false
-          pngQuality: '80'
-          webpQuality: "80"
->>>>>>> f073295 (done)
       - name: Commit files
         run: |
           git add .
@@ -73,7 +50,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
-<<<<<<< HEAD
   lighthouse:
     needs: Convert-Compress
     runs-on: ubuntu-latest
@@ -87,5 +63,3 @@ jobs:
           configPath: '.github/.lighthouse/lighthouserc.json'
           uploadArtifacts: true # save results as an action artifacts
           temporaryPublicStorage: true # upload lighthouse report to the temporary storage
-=======
->>>>>>> f073295 (done)

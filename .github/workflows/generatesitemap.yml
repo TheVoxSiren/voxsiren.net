@@ -3,14 +3,7 @@ name: Generate xml sitemap
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-<<<<<<< HEAD
     - cron: "10 0 * * *" # Every day at 00:10 UTC
-=======
-    - cron: "0 0 * * *" # Every day at 00:00 UTC
-  #push:
-  #  branches:
-  #    - main
->>>>>>> f073295 (done)
   workflow_dispatch:
 
 jobs:

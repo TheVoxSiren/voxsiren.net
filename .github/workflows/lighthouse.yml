@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 name: Run Lighthouse CI
 on:
   push:
@@ -15,16 +14,6 @@ on:
       - "**.html"
       - "**.css"
       - "**.js"
-=======
-name: Lighthouse CI
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
->>>>>>> f073295 (done)
   workflow_dispatch:
 
 jobs:
