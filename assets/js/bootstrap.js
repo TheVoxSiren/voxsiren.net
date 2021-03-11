@@ -27,7 +27,7 @@ function t(d, c, h) {
     c = c && c.hasOwnProperty("default") ? c["default"] : c;
     h = h && h.hasOwnProperty("default") ? h["default"] : h;
     h = { K: "bsTransitionEnd", Hb: function () {}, Eb: function () {}, Gb: function () {}, ac: function () {}, kc: function () {}, hc: function () {}, Tb: function () {}, lc: function () {}, Db: function () {} };
-    c.g.Cb = function () {};
+    c.Cb = function () {};
     c.event.ec[h.K] = { ub: "transitionend", zb: "transitionend", Ob: function () {} };
     c.g.alert;
     var m = (function () {
