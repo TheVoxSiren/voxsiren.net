@@ -1,4 +1,4 @@
-name: Get Pagespeed results daily
+name: Get Pagespeed results for README
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
