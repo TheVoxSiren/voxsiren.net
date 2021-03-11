@@ -1,4 +1,4 @@
-name: Remove unused ext. CSS code
+name: Remove unused & make critical css
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
