@@ -53,6 +53,10 @@ Based on these changes it will make the WEBP and AVIF versions of your images an
 
 The quality can be changed by checking out both repositories documentation and by changing the OPTIMIZTCONVERTERARGS for optimizt and the parts under with in the Compress Images task.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f073295 (done)
 ### owaspfullsecscan.yml
 This workflow basically checks the website and makes an **issue** with all the problems currently. It does this every day at 0:00 UTC. If all issues are solved the issue is closed automatically.
 
@@ -65,22 +69,32 @@ It will automatically make a folder based on RESUTLSFOLDER env data, and put all
 
 Just change the HOST env to the right website, and use the beter example instead of the one in this repository.
 
+<<<<<<< HEAD
 ### refreshobservatoryscore.yml
 Basically this workflow is only useful if a badge like [this](https://img.shields.io/mozilla-observatory/grade-score/voxsiren.net?publish) is used and the user cares enough to keep this badge up-to-date.
 Just change the last part of the run part to the website it needs to check. I will check only once every three days.
 
 # styleoptimize.yml
+=======
+### purgecss.yml
+>>>>>>> f073295 (done)
 This file **CHANGES CODE** and thus should be used carefully. It's purpose is to remove all unused CSS on any website! It works as is and so far has done it's job good enough.
 Other solutions could go deeper but would require so much configuration that it would be beter to use a modern language. Because the workflow removes code, it only runs 5 minutes after midnight UTC.
 As it might be undesirable to optimize during development with something as critical as CSS. It can be changed to only trigger when CSS/HTML is changed, optimizt.yml does this but with JPG/JPEG/PNG.
 IF this is more desired, use inspiration from there and edit the file types accordingly.
 
+<<<<<<< HEAD
 This workflow will check every html file in the project (from the root) and will check in assets/css for all the .css files.
 Based on all the css files it will generate the critical css and put it in a minimized internal css style tag. The <style> tags that are multiple lines will stay intact!
 This workflow also has a very clever sed command [thanks to Armali](https://stackoverflow.com/a/66552948/15361696)! This sed command will remove the one line internal css so that critical can insert the newest one!
 This all will not generate another commit if nothing changed within the critical view of the html page. Critical will also fix some styling as a bonus!
 
 It also will do a lighthouse check as a second job after the above is done.
+=======
+### refreshobservatoryscore.yml
+Basically this workflow is only useful if a badge like [this](https://img.shields.io/mozilla-observatory/grade-score/voxsiren.net?publish) is used and the user cares enough to keep this badge up-to-date.
+Just change the last part of the run part to the website it needs to check. I will check only once every three days.
+>>>>>>> f073295 (done)
 
 # README.MD
 The README.MD in the root folder is also made by me. It's largely shields.io and it's best to look there for more information. The side images are done in HTML and all the other parts are in Markdown.
@@ -107,3 +121,11 @@ If you're brave, you can even add a custom icon with a base64 string. It's possi
 # Final note
 This folder contains all my experience with Github Workflow and personally I enjoy using it. I believe if users use Github Pages or anything else which Github functions as a code hosing provider.
 Using some of these workflows can improve the site's performance futher which makes everyone happy :). You also have my permission to do whatever you wish with these workflows, crediting would be nice.
+<<<<<<< HEAD
+=======
+
+# TODO
+Need to be able to use CriticalCSS in Github Workflow so that each webpage contains the critical CSS automatically. Should be done in a seperate branch as pages get updated and removing inlline critical css is a pain.
+Doing it in <style> should be possible, but might not work as good as inline. As of writing just getting the package to work has proven to be a challange.
+
+>>>>>>> f073295 (done)
