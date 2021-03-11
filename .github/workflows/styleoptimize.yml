@@ -42,7 +42,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.ref }}
   lighthouse:
-    required: purgecss
+    needs: purgecss
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
