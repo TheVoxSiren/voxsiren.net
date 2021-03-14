@@ -41,23 +41,5 @@
 [![Mobile pagespeed score](.github/.lighthouse/pagespeedresultmobile.svg "Mobile pagespeed score")](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https%3A%2F%2Fvoxsiren.net%2F)
 
 ## Todo
-- [x] Preconnect to 3rd party urls
-- [x] Use CriticalCSS automatically
-- [x] Preload stylesheets correct
-- [x] Use most libraries from CDN if not minimized from origin
-- [x] Defer and preload all JS.
-- [x] Use appropiate tags to make a nice url preview in all socialmedia
 - [ ] Have correct CSP, needs updating of the scrollreveal.js https://github.com/jlmakes/scrollreveal/pull/431 to remove unsafe-inline from style-src
-- [x] Only loading in lazy for offscreen images
-- [x] Automatically always use WEBP above png/jpg/jpeg.
-- [x] Automatically make WEBP and AVIF.
-- [x] Specify exact dimenions for all images
-- [x] Have all code be valid and optimized and possible local files automatically stripped down of unused styles
-- [x] Generate XML sitemap on each commit for SEO.
-- [x] Use SEO
-- [x] Keep README up-to-date automatically
-- [x] Have an issue with all security issues
-- [ ] Move domain from OVH to Cloudflare **(possible 12-3-2021)** https://developers.cloudflare.com/registrar/domain-transfers/transfer-to-cloudflare https://documentation.online.net/en/web/domain-name/tutorial/transfer-domain-ovh
 - [ ] Be able to improve security headers
-- [x] Use Opengraph tags for a nice preview
-- [x] Integrate Lighthouse CI into workflow (might also help to advice about defer/preload/prefetch etc)
