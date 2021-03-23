@@ -42,4 +42,3 @@
 
 ## Todo
 - [ ] Have correct CSP, needs updating of the scrollreveal.js https://github.com/jlmakes/scrollreveal/pull/431 to remove unsafe-inline from style-src
-- [ ] Be able to improve security headers
