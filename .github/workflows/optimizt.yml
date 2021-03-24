@@ -29,16 +29,6 @@ jobs:
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo
       - name: run optimizt
         run: optimizt ${OPTIMIZTCONVERTERARGS}
-      #- name: Compress Images
-      #  id: calibre
-      #  uses: calibreapp/image-actions@main
-      #  with:
-      #    githubToken: ${{ secrets.GITHUB_TOKEN }}
-      #    compressOnly: true # Needed to not get a pullrequest and just compress
-      #    jpegQuality: '100'
-      #    jpegProgressive: false
-      #    pngQuality: '100'
-      #    webpQuality: "100"
       - name: Commit files
         run: |
           git add .
