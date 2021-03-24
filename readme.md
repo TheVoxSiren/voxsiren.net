@@ -41,4 +41,5 @@
 [![Mobile pagespeed score](.github/.lighthouse/pagespeedresultmobile.svg "Mobile pagespeed score")](https://lighthouse-dot-webdotdevsite.appspot.com/lh/html?url=https%3A%2F%2Fvoxsiren.net%2F)
 
 ## Todo
-- [ ] Have correct CSP, needs updating of the scrollreveal.js https://github.com/jlmakes/scrollreveal/pull/431 to remove unsafe-inline from style-src
+- [x] Automate and have done everything from security to performance automation if not configurable (worker)
+- [ ] Redisgn the whole website. This is done by VoxSiren herself however she wants to do it.
