@@ -12,4 +12,4 @@ jobs:
     name: Refresh Observatory score
     steps:
       - name: Curl the site to initiate refresh
-        run: curl https://observatory.mozilla.org/analyze/voxsiren.net
+        run: curl -L https://observatory.mozilla.org/analyze/voxsiren.net
