@@ -39,7 +39,7 @@ jobs:
           git add .
           git config --local user.email "actions@github.com"
           git config --local user.name "github-actions[bot]"
-          git diff --quiet && git diff --staged --quiet || git commit -am "Converted all JPG/JPEG/PNG files into compressed WEBP & AVIF"
+          git diff --quiet && git diff --staged --quiet || git commit -am "Create WebP & AVIF versions"
       - name: Push changes
         uses: ad-m/github-push-action@master # This is a premade github action
         with:
