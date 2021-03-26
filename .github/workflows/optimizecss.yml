@@ -27,9 +27,7 @@ jobs:
           npm i -g purgecss
       - name: Run purgecss
         run: |
-          purgecss --help
           purgecss --css ../**/*.css --content "**.html" "**.js" --output assets/css/
-          sudo purgecss --css ../**/*.css --content "**.html" "**.js" --output assets/css/
       - name: Run critical
         run: | # Find each HTML file on root. remove online (critical)css. Add critical css to temp html file. Rename temp html file to original.
           find . -type f \( -iname "*.htm" -o -iname "*.html" \)|while read fname; do
