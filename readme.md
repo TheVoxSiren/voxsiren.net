@@ -29,9 +29,9 @@
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Optimizt?event=push&logo=github-actions&logoColor=f5f5f5&label=Optimizt)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/optimizt.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Generate%20xml%20sitemap?event=push&label=Generate%20Sitemap&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/generatesitemap.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Get%20Pagespeed%20results%20daily?event=schedule&label=Update%20pagespeed%20score&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/pagespeed.yml)
-[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Optimize%20CSS?event=schedule&logo=github-actions&logoColor=f5f5f5&label=Optimized%20CSS)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/purgecss.yml)
+[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Optimize%20CSS?event=schedule&logo=github-actions&logoColor=f5f5f5&label=Optimized%20CSS)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/optimizecss.yml)
 [![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Refresh%20Observatory%20score?event=schedule&logo=github-actions&logoColor=f5f5f5&label=Refresh%20observatory)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/refreshobservatoryscore.yml)
-[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Lighthouse%20CI?event=push&label=Lighthouse%20tests&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/styleoptimize.yml)
+[![GitHub Workflow Status (event)](https://shields.io/github/workflow/status/TheVoxSiren/voxsiren.net/Lighthouse%20CI?event=push&label=Lighthouse%20tests&logo=github-actions&logoColor=f5f5f5)](https://github.com/TheVoxSiren/voxsiren.net/actions/workflows/lighthouse.yml)
 
 
 <img align="left" height="50" src="https://cdn.worldvectorlogo.com/logos/google-lighthouse-icon-may-2019-.svg" alt="Google Lighthouse icon">
