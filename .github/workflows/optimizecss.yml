@@ -17,10 +17,10 @@ jobs:
           node-version: 14
       - name: Install purgecss # https://purgecss.com/CLI.html#safelist also using sudo with purgecss to get beter results (?)
         run: |
-          npm i -g purgecss
+          npm i -g critical
       - name: Install critical
         run: |
-          npm i -g critical
+          npm i -g purgecss
       - uses: actions/checkout@v2 # This is a premade github action
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
