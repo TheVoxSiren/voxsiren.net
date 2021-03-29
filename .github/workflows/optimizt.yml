@@ -3,13 +3,7 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch and only when there's JPG/JPEG/PNG in the commmit!
   push:
     paths:
-      - "**.jpg"
-      - "**.jpeg"
-      - "**.png"
-  pull_request:
-    paths:
-      - "**.jpg"
-      - "**.jpeg"
+      - "**.jpe?g"
       - "**.png"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -18,7 +12,7 @@ jobs:
   Convert-Compress:
     runs-on: ubuntu-latest
     env:
-      OPTIMIZTCONVERTERARGS: --avif --webp --lossless . # convert to avif and webp for all JPG/JPEG/PNG files in this folder
+      OPTIMIZTCONVERTERARGS: --verbose --force --avif --webp . # convert to avif and webp for all JPG/JPEG/PNG files in this folder
     steps:
       # This fix "Missing write access to /usr/local/lib/node_modules" error
       - name: Setup node 14 properly
