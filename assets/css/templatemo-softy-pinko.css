@@ -225,7 +225,7 @@ span:after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.webp);
+  background-image: url(../assets/images/banner-bg.webp);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -586,7 +586,7 @@ button.main-button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(../images/work-process-bg.webp);
+  background-image: url(../assets/images/work-process-bg.webp);
   z-index: 2;
   top: -20%;
   left: -20%;
@@ -701,7 +701,7 @@ button.main-button:hover {
   width: 140%;
   height: 140%;
   opacity: .90;
-  background-image: url(../images/fun-facts-bg.webp);
+  background-image: url(../assets/images/fun-facts-bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
